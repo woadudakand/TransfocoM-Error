@@ -1,24 +1,25 @@
 import React from 'react'
 import Header from '../Header/Header'
 import Navigation from '../navlist/Navigation'
-import CustomRoutes from '../route/routes';
+
 import classes from './Layout.module.css';
 
-const Layout = () => {
+const Layout = (WrappedComponent) => {
 
 
-
-  return (
-    <>
-    <Header/>
-    <div className={classes['left-panel']}><Navigation /></div>
-      <div className={classes['right-panel']}>
-      <main className={classes.main}>
-        
-      </main>
-      </div>
-    </>
-  )
+  return () => {
+    return (
+      <>
+      <Header/>
+      <div className={classes['left-panel']}><Navigation /></div>
+        <div className={classes['right-panel']}>
+        <main className={classes.main}>
+          <WrappedComponent />
+        </main>
+        </div>
+      </>
+    )
+  }
 }
 
 export default Layout
