@@ -1,0 +1,20 @@
+footer.mainFooter {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    padding: 0 20px 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1f2426;
+  }
+  
+  footer.mainFooter hr {
+    width: 100%;
+  }
+  
+  footer.mainFooter p {
+    margin-top: 20px;
+  }
+  
